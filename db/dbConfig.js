@@ -9,11 +9,7 @@ const cn = {
 };
 
 const db = pgp(cn);
-console.log(pgp);
-console.log("-----");
-console.log(pgp(cn));
-console.log("-----");
-console.log(db);
+
 db.connect()
   .then((obj) => {
     // Can check the server version here (pg-promise v10.1.0+):
